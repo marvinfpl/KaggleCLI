@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	"kaggle/internal/api"
+	"kaggle/internal/downloader"
 	"fmt"
 )
 
@@ -13,7 +13,7 @@ var downloadCmd = &cobra.Command{
 		url := args[0]
 		output := "dataset.zip"
 		
-		err := api.DownloadDataset(url, output)
+		err := downloader.DownloadDataset(url, output)
 		if err != nil {
 			return err
 		}
