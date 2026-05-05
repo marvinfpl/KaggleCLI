@@ -2,6 +2,8 @@ module kaggle
 
 go 1.26.2
 
+require github.com/spf13/cobra v1.10.2
+
 require (
 	github.com/spf13/cobra v1.10.2
 	github.com/xyproto/unzip v1.0.0
